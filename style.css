@@ -4,10 +4,14 @@
     box-sizing: border-box;
 
 }
+body{
+    
+    overflow-x: hidden;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: lemonchiffon ;
+    background-color: rgba(249,219,121,1) ;
     align-items: center;
     width: 100%;
     height: 80px;
@@ -15,6 +19,12 @@
     position: fixed;
     z-index: 2;
 
+}
+.navbar i a{
+    font-size: 50px;
+    font-weight: 200;
+    color: black;
+    
 }
 .navbar img{
     width: 60px;
@@ -25,6 +35,7 @@
     gap: 25px;
     
 }
+
 
 .navbar nav ul li,a{
     list-style: none;
@@ -52,6 +63,95 @@
     font-weight: bold;
     border-radius: 10%;
 }
+.drain{
+    animation: appaer 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    overflow: hidden;
+    
+}
+.drain:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 10px 16px black;
+}
+@keyframes appaer{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.grain{
+    animation: appaer 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    overflow: hidden;
+}
+.grain:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 10px 16px black;
+}
+@keyframes appaer{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.brain{
+    animation: appaer 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    overflow: hidden;
+}
+.brain:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 10px 16px black;
+}
+@keyframes appaer{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.scroll{
+    animation: appaer 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    overflow: hidden;
+}
+.scroll:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 10px 16px black;
+}
+@keyframes appaer{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+
 
 .homeimg{
     width: 100%;
@@ -60,8 +160,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #eded6f;
-    z-index: 1;
+    background-color:  rgba(249,219,121,1) ;
+     z-index: 1;
 
 
 }
@@ -74,17 +174,6 @@
      justify-content: center;
      position: absolute;
      z-index: 0;
-
-
-}
-.homeimg a{
-       display: flex;
-       justify-content: center;
-       align-items: center ;
-       z-index: 1;
-       font-size: 50px;
-       font-style: italic;
-       color: black;
 }
 
 #firstpage{
@@ -92,6 +181,71 @@
     height: 100vh;
     border: black solid;
 }
+
+/*for icecraem text hover*/
+.homeimg h1{ 
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+span{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial;
+    top: 20px;
+    color:white;
+    display: inline-block;
+    font-size: 10rem;
+    text-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #b7b7b7, 0 3px 0 #b7b7b7, 0 4px 0 #b7b7b7, 0 5px 0 #b7b7b7, 0 6px 0transparent,0 7px 0transparent,0 8px 0transparent,0 9px 0transparent,0 10px 10px black(0,0,0.5);
+    animation: bounce 0.4s ease infinite alternate;
+    
+}
+h1 span:nth :nth-child(2){
+    animation-delay: 0.1s;
+}
+
+h1 span:nth :nth-child(3){
+    animation-delay: 0.2s;
+}
+
+h1 span:nth :nth-child(4){
+    animation-delay: 0.3s;
+}
+
+h1 span:nth :nth-child(5){
+    animation-delay: 0.4s;
+}
+
+h1 span:nth :nth-child(6){
+    animation-delay: 0.5s;
+}
+
+h1 span:nth :nth-child(7){
+    animation-delay: 0.6s;
+}
+
+h1 span:nth :nth-child(8){
+    animation-delay: 0.7s;
+}
+
+
+
+h1 span:nth :nth-child(6){
+    animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,  0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc,  0 9px 0 #ccc, 0 60px 30px black;
+    }
+}
+
+
 .homeimg h1{
     font-size: 210px;
     justify-content: center;
@@ -139,15 +293,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z z-index: 1;
-
+    
 }
+
+
 #container2 img{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 110vh;
+        
 }
 #container2 h1{
     font-size: 110px;
@@ -161,6 +317,46 @@
 
 }
 #container2 h2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px;
+    font-size: 50px;
+    color: aliceblue;
+
+}
+#container3{
+    background-color: pink;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: 
+}
+#container3 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+}
+#container3 h1{
+    font-size: 110px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 12%;
+    font-style: calc();
+    color: aliceblue;
+
+}
+#container3 h2{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,6 +365,90 @@
     font-size: 50px;
     color: aliceblue;
 }
+#container3 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px;
+    font-size: 30px;
+    color: black;
+    margin-top: 350px;
+    animation-timeline: ;
+}
+#container3 h1:hover{
+
+      
+}
+
+
+/*footer css*/
+.footercontainer p{
+    color: white;
+}
+
+.footercontainer div a {
+    color: white;
+    gap: 5px;
+}
+.information {
+         padding-top: 50px;
+         padding-left: 20px;
+         display: flex;
+}
+
+.information p{
+    color: white;
+    padding: 10px;
+    gap: 30px
+}
+.mailbox{
+    position: relative;
+
+}
+.mailbox input {
+    background-color: white;
+}
+
+
+
+.mailbox {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    
+    
+}
+.form-container {
+    width: 300px;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+.subscribe-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    }
 @media(max-width:430px){
 
 }

@@ -1,5 +1,5 @@
 .flavourspage{
-    background-color: #431f1f;
+    background-color:#e68797;/*#431f1f;*/
     width: 100%;
     height: 60vh;
     display: flex;
@@ -15,6 +15,12 @@
     color: antiquewhite;
     font-size: 220px;
 }
+#icecream{
+   width: 100%;
+    height: 200vh;
+    background: pink;
+}
+
 #icecream h1{
     display: flex;
     justify-content: center;
@@ -22,7 +28,192 @@
     color: black;
     font-size: 60px;
 }
-#flavours {
+
+.image main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+#section1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media(max-width:430px){
+
+}
+@media(min-width:431px) and @media(max-width:430 to 750px)
+
+
+
+
+ /*.cardlist{
+    width: 280px;
+    height: 369px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0,5);
+    transition: 0.5s ease-in-out;
+ } 
+ .cardlist:hover{
+    transform: translateY(3s);
+ } 
+ .cardlist:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bott);
+ } 
+ .cardlist:after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    border: 2px solid white ;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+
+ }
+ .cardlist:hover:after{
+         opacity: 1;
+         inset: 20px;
+
+ }
+
+ .carditem{
+    width: 80%;
+
+    left: 50%;
+    top: 50%;
+    
+ }*/
+
+ 
+
+.cardlist .carditem{
+    color: black;
+    width: 400px;
+    padding: 35px;
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 8px;
+     backdrop-filter: blur(30px);
+     background-color:  rgba(255, 255, 255, 0.2);
+     border: solid 1px  rgba(255, 255, 255, 0.5);
+     
+
+    
+}
+.cardlist .carditem .userimage{
+       width: 250px;
+       height: 250px;
+       border-radius: 50%;
+       margin-bottom: 40px;
+       border: 3px solid #fff;
+       padding: 4px;
+}
+
+
+
+.footercontainer{
+    background-color: black;
+    width: 100%;
+    position:absolute;
+    
+    display: flex;
+    padding: 10px;
+    height: 50vh;
+    gap: 30px;
+
+
+
+}
+/*footer css*/
+.footercontainer p{
+    color: white;
+}
+
+.footercontainer div a {
+    color: white;
+    gap: 5px;
+}
+.information {
+         padding-top: 50px;
+         padding-left: 20px;
+         display: flex;
+}
+
+.information p{
+    color: white;
+    padding: 10px;
+    gap: 30px
+}
+.mailbox{
+    position: relative;
+
+}
+.mailbox input {
+    background-color: white;
+}
+
+
+
+.mailbox {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    
+    
+}
+.form-container {
+    width: 300px;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+.subscribe-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+        }
+
+/*#flavours {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -101,11 +292,15 @@
 
     
 }
-.anshika{
-    margin-top: 50px;
-    margin-left: 50px;
 
-}
+
+
+
+
+
+
+
+
 
 
 /*.card-container{
